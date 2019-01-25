@@ -630,7 +630,7 @@ static void write_rr(struct resourcerecord* rr, int ipdx, int znix)
 				sprintf(tmp, "%x.", in6addr[i] >> 4);
 				strcat(buf, tmp);
 			}
-			strcat(buf, "ip6.int.");
+			strcat(buf, "ip6.arpa");
 		} else {
 			strncpy(buf, rr->dnsdomainname, sizeof(buf));
 			buf[ sizeof(buf) -1 ] = '\0';
